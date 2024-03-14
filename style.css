@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#cabecalho{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    
+}
+
+#logo{
+    padding: 30px;
+    font-size: 35px;
+}
+
+#botoes{
+    width: 450px;
+    height: 50px;
+}
+
+#botoes button{
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    margin: 6px;
+}
+
+#botoes a{
+    text-decoration: none;
+}
+
+#botoes button:hover{
+    background-color: rgb(127, 127, 233);
+}
+
+#btn_entrar{
+    background-color: rgba(77, 77, 245, 0.63);
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+#btn_entrar:hover{
+    background-color: blue;
+    color: #fff;
+    transform: scale(1.2);
+    
+    
+}
+
+#btn_menu{
+    background-color: blue;
+    color: #fff;
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 40px;
+    display: none;
+}
+
+.menu_mobile{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60%;
+    background-color: rgb(218, 75, 75);
+    margin-right: 10px;
+}
+
+.display{
+    display: block;
+}
+
+@media screen and (max-width: 850px){
+    #cabecalho{
+        width: 100vw;
+        height: 80px;
+    }
+
+    #logo{
+        padding: 25px;
+        font-size: 30px;
+    }
+
+    #botoes{
+        width: 350px;
+        height: 40px;
+    }
+
+    #botoes button{
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 3px;
+        border: none;
+        font-weight: bold;
+        margin: 6px;
+    }
+
+    #btn_entrar{
+        background-color: rgba(77, 77, 245, 0.63);
+        width: 80px;
+        height: 40px;
+        padding: 8px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+    
+    .menu_mobile{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 450px){
+    #cabecalho{
+        width: 100vw;
+        height: 60px;
+    }
+
+    #logo{
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    #botoes{
+        width: 200px;
+        height: 20px;
+    }
+
+    #botoes button{
+        width: 40px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 3px;
+        border: none;
+        font-weight: bold;
+        margin: 2px;
+        display: none;
+    }
+
+    #btn_entrar{
+        background-color: rgba(77, 77, 245, 0.63);
+        width: 60px;
+        height: 40px;
+        padding: 8px;
+        font-size: 10px;
+        border-radius: 3px;
+        margin-right: 20px;
+        display: none;
+
+    }
+    
+    #btn_menu{
+        background-color: blue;
+        color: #fff;
+        width: 60px;
+        height: 40px;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-right: 20px;
+        display: flex;
+    }
+
+    
+
+}

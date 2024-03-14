@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Responsivo</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <p id="logo">Logo</p>
+        <p id="botoes">
+            <button><a href="inicio.html">Início</a></button>
+            <button><a href="projetos.html">Projetos</a></button>
+            <button><a href="sobre.html">Sobre</a></button>
+        </p>
+        <button id="btn_entrar">Entrar</button>
+        <button id="btn_menu" onclick="mostraMenu()">Menu</button>
+    </header>
+
+    <div class="menu_mobile">
+        <p id="botoes_menu">
+            <ul>
+                <li><button><a href="inicio.html">Início</a></button></li>
+                <li><button><a href="projetos.html">Projetos</a></button></li>
+                <li><button><a href="sobre.html">Sobre</a></button></li>
+                <button id="btn_entrar_menu">Entrar</button>
+            </ul>
+        </p>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
